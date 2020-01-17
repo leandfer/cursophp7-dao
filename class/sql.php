@@ -11,20 +11,20 @@
 		}
 
 
-		private function setParams($statmat,$parameters = array()){
+		private function setParams($statement,$parameters = array()){
 
 			foreach ($parameters as $key => $value) {
 
-				$this->setParam($Key,$value);
+				$this->setParam($statement, $key, $value);
 
 			}
 
 		}
 
 
-		private function setParam($statmat, $key, $value){
+		private function setParam($statement, $key, $value){
 
-			$statmat->bindParam($key, $value);
+			$statement->bindParam($key, $value);
 
 
 		}

@@ -36,13 +36,20 @@
 	echo $aluno;
 */
 
-//update usuarios
-	$usuario = new Usuarios();
+//alterar um usuarios
+/*	$usuario = new Usuarios();
 
 	$usuario->loadById(6);
 	$usuario->update("professor","#@@#$!");
 
 	echo $usuario;
+*/
 
+//Deletar um usuario
+	$usuario = new Usuarios();
+	$usuario->loadById(7);
+	$usuario->delete();
+
+	echo $usuario;
 
 ?>
